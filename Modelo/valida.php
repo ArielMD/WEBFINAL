@@ -16,7 +16,7 @@ function valida($usuario, $contrasena){
 
 $boolean = valida($Usuario, $Pwd);
 echo $boolean;
-if (1) {
+if (valida($Usuario, $Pwd)) {
     if (isset($_POST['user'])) {
         $_SESSION['Usuario'] = $_POST["user"];
     }

@@ -96,5 +96,7 @@ class Usuario {
         $this->sexo = $sexo;
     }
     
-    
+    function dato(){
+        return $this->getId()." ".$this->getContrasena()." ".$this->getNombre()." ".$this->getApellido()." ".$this->getEdad()." ".$this->getCorreo()." ".$this->getTelefono()." ".$this->getSexo(); 
+    }
 }

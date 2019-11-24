@@ -7,6 +7,7 @@ session_start();
  */
 include '../Dao/DAOUsuario.php';
 
+
 $id = $_POST["id"];
 $pass = $_POST["contrasena"];
 $nombre = $_POST["nombre"];
@@ -16,17 +17,20 @@ $correo = $_POST["correo"];
 $telefono = $_POST["telefono"];
 $genero = $_POST["genero"];
 
+//$cast = settype($edad,"integer") && settype($telefono,"integer");
+
 function nuevoUsuario($usuario){
     $daoUser = new DAOUsuario();
     return $daoUser->insertar($usuario);
 }
 $nuevoUsuario = new Usuario($id, $pass, $nombre, $apellido, $edad, $correo, $telefono, $genero);
+echo $nuevoUsuario->Dato();
 $nuevo = nuevoUsuario($nuevoUsuario);
 if($nuevo){
     if (isset($_POST['id'])) {
         $_SESSION['Usuario'] = $_POST["id"];
     }
-    header('location:../vista/Articulos.php');
+    header('location:../vista/index.php');
 }else{
     header('location:../vista/Registro.php');
 }

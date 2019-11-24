@@ -36,7 +36,6 @@ class DAOUsuario extends DAOGeneral{
         $sexo = $objetoUsuario->getSexo();
        
         $sql = 'insert into usuarios values ("'.$id.'","'.$pass.'","'.$nombres.'","'.$apellidos.'","'.$edad.'","'.$correo.'","'.$telefono.'","'.$sexo.'")';
-
         if (!$c->query($sql)) {
             return false;
         } else {
