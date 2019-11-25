@@ -1,5 +1,5 @@
 <?php
-include '../Dao/DAOGeneral.php';
+require_once('../Dao/DAOGeneral.php');
 class DAOVenta extends DAOGeneral{
         public function insertar($entidad) {
         $c = $this->getConexion();
@@ -63,7 +63,7 @@ class DAOVenta extends DAOGeneral{
         $c = $this->getConexion();
        foreach ($c->query($sql) as $fila){
           array_push($list, $fila);
-       }
+        }
        
        return $list;
     }

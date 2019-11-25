@@ -116,7 +116,7 @@ El control por voz brinda más comodidad en la vida diaria, también es muy úti
     <div class="row">
         <br><br>
         <?php
-        require '../Dao/DAOVenta.php';
+        require_once('../Dao/DAOVenta.php');
         $ventas = new DAOVenta();
         $busqueda = $_GET["buscar"];
         $lista=$ventas->consultar($busqueda);

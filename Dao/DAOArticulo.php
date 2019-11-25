@@ -11,7 +11,7 @@
  *
  * @author Ariel May
  */
-include '../Dao/DAOGeneral.php';
+require_once('../Dao/DAOGeneral.php');
 class DAOArticulo extends DAOGeneral{
     
     public function insertar($entidad) {

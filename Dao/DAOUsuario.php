@@ -12,9 +12,8 @@
  * @author Ariel May
  */
 //include 'conexion.php';
-include '../Modelo/Usuario.php';
-include '../Dao/DAOGeneral.php';
-
+require_once('../Modelo/Usuario.php')
+require_once('../Dao/DAOGeneral.php')
 class DAOUsuario extends DAOGeneral{
 
     var $con;

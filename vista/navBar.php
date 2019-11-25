@@ -42,6 +42,8 @@
               if (isset($_SESSION['Usuario'])) {
                 echo '<li>--'.$_SESSION['Usuario'].'</li>';
                 echo '<li role="separator" class="divider"></li>';
+                echo '<li><a href="../vista/Verperfil.php">Ver Perfil</a></li>';
+                echo '<li role="separator" class="divider"></li>';
                 echo '<li><a href="../vista/registroArticulos.php">Vender Articulo</a></li>';
                 echo '<li role="separator" class="divider"></li>';
               }
@@ -49,6 +51,7 @@
             <?php
               if (!isset($_SESSION['Usuario'])) {
                 echo '<li><a href="../vista/login.php">Iniciar Sesion</a></li>';
+                
               }else{
                 echo '<li><a href="../Modelo/cerrarSesion.php">Cerrar Sesion</a></li>';
               }

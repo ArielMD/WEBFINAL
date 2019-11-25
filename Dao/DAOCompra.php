@@ -1,4 +1,6 @@
 <?php
+require_once('../Modelo/Compra.php');
+require_once('../Dao/DAOGeneral.php');
 class DAOCompra extends DAOGeneral{
         public function insertar($entidad) {
         $c = $this->getConexion();
