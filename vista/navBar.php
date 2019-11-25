@@ -20,7 +20,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">FMATStore</a>
+      <a class="navbar-brand" href="../vista/index.php">FMATStore</a>
     </div>
 
    

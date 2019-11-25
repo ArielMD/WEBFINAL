@@ -112,62 +112,92 @@ El control por voz brinda más comodidad en la vida diaria, también es muy úti
     </div><!-- /.carousel -->
 	
 <!--Inicio del contenedor-->
-<div class="container"> 
-    <div class="row">
-        <br><br>
+  <div class="container"> 
+       <div class="row">
+           <br><br>
         <div class="col-lg-4">
-
-            <a href=""><img src="../img/dell.jpg" alt="Generic placeholder image"></a>
-
-            <h2>DELL XPS 6920</h2>
-            <p><span class="badge">Precio $42487 MX</span></p>
-            <p>La nueva pc de dell para los gamer que les gusta la
-                potencia al maximo, disfruta de esta nueva experiencia unica,
-                acompañada con un diseño elegante y poderoso</p>
-            <p>
-                <button type="button" class="btn btn-default" title="dellxps-6920" data-container="body" data-toggle="popover" data-placement="top" data-content="Pantalla de 15 pulgadas con resolución Full HD (1,920x1,080 pixeles) y con la opción de configurarla hasta con una resolución UHD 4K (3,840x2,160 pixeles)
-                        Procesador Intel Core i7 o Intel Core i7 de séptima generación con una velocidad máxima de 3.8GHz.">
-                    Ver detalles <i class="fa fa-eye"></i>
-                </button>
-                <a href="validar.php"> <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Añadir este producto al carrito">Al carrito <i class="fa fa-shopping-cart"></i>
-                    </button></a>
-
-            </p>
+        
+          <a href=""><img src="../img/dell.jpg" alt="Generic placeholder image"></a>
+          
+          <h2>DELL XPS 6920</h2>
+          <p><span class="badge">Precio $42487 MX</span></p>
+          <p>La nueva pc de dell para los gamer que les gusta la
+          potencia al maximo, disfruta de esta nueva experiencia unica,
+          acompañada con un diseño elegante y poderoso</p>
+          <p>
+        <button type="button" class="btn btn-default" title="dellxps-6920" data-container="body" data-toggle="popover" data-placement="top" data-content="Pantalla de 15 pulgadas con resolución Full HD (1,920x1,080 pixeles) y con la opción de configurarla hasta con una resolución UHD 4K (3,840x2,160 pixeles)
+Procesador Intel Core i7 o Intel Core i7 de séptima generación con una velocidad máxima de 3.8GHz.">
+  Ver detalles <i class="fa fa-eye"></i>
+ </button>
+  <a href="validar.php"> <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Añadir este producto al carrito">Al carrito <i class="fa fa-shopping-cart"></i>
+</button></a>
+          
+        </p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <img src="../img/teclado.jpg"  alt="Generic placeholder image">
-            <h2>TECLADO BLUETOOTH</h2>
-            <p><span class="badge">Precio $912 MX</span></p>
-            <p>El nuevo teclado con bluetooth 5.0 compatible con todos los equipos del mercado.
-                Util para los amantes de los juegos y para trabajar a oscuras</p>
-            <p>
-                <button type="button" class="btn btn-default" title="Teclado Gaming" data-container="body" data-toggle="popover" data-placement="top" data-content="El teclado gaming KB-502 de Vorago, gracias a su diseño ergonómico e iluminación llevarán tu juego a otro nivel, mejorando la experiencia en el campo de batalla. Además cuenta con 12 teclas multimedia para facilitarte el trabajo, y a la hora de jugar puedas utilizarlas con un sólo toque.">
-                    Ver detalles <i class="fa fa-eye"></i>
-                </button>
-                <a href="validar.php"> <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Añadir este producto al carrito">Al carrito <i class="fa fa-shopping-cart"></i>
-                    </button></a> 
-            </p>
+          <img src="../img/teclado.jpg"  alt="Generic placeholder image">
+          <h2>TECLADO BLUETOOTH</h2>
+          <p><span class="badge">Precio $912 MX</span></p>
+          <p>El nuevo teclado con bluetooth 5.0 compatible con todos los equipos del mercado.
+          Util para los amantes de los juegos y para trabajar a oscuras</p>
+          <p>
+          <button type="button" class="btn btn-default" title="Teclado Gaming" data-container="body" data-toggle="popover" data-placement="top" data-content="El teclado gaming KB-502 de Vorago, gracias a su diseño ergonómico e iluminación llevarán tu juego a otro nivel, mejorando la experiencia en el campo de batalla. Además cuenta con 12 teclas multimedia para facilitarte el trabajo, y a la hora de jugar puedas utilizarlas con un sólo toque.">
+  Ver detalles <i class="fa fa-eye"></i>
+  </button>
+  <a href="validar.php"> <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Añadir este producto al carrito">Al carrito <i class="fa fa-shopping-cart"></i>
+</button></a> 
+          </p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <img src="../img/iphone.jpg"  alt="Generic placeholder image">
-            <h2>IPHONE 6 PLUS</h2>
-            <p><span class="badge">Precio $12634 MX</span></p>
-            <p>Conoce el nuevo modelo de la manzana con un diseño super elegante para todo usuario.
-                Conoce la nueva camara de 98 pixeles para sacar unas fotos de pelicula.
-            </p>
-            <p>
-                <button type="button" class="btn btn-default" title="Iphone 6 Plus" data-container="body" data-toggle="popover" data-placement="top" data-content=" El iPhone 6 Plus cuenta con una pantalla de 5.8 pulgadas que abarca todo el frente del teléfono, dejando un espacio arriba para acomodar todos los sensores que contribuyen a Face ID, el nuevo método de desbloqueo por rostro, ya que el botón Touch ID desaparece. Con una atípica resolución de 2436 x 1125 pixels, acomoda 458ppi. Por dentro, el iPhone 6 Plus tiene el nuevo procesador A11 Bionic. La cámara es dual de 98 MP similar a la del iPhone X, es resistente al agua y corre iOS 11. ">
-                    Ver detalles <i class="fa fa-eye"></i>
-                </button>
-                <a href="validar.php"> <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Añadir este producto al carrito">Al carrito <i class="fa fa-shopping-cart"></i>
-                    </button></a>
-            </p>
+          <img src="../img/iphone.jpg"  alt="Generic placeholder image">
+          <h2>IPHONE 6 PLUS</h2>
+          <p><span class="badge">Precio $12634 MX</span></p>
+          <p>Conoce el nuevo modelo de la manzana con un diseño super elegante para todo usuario.
+          Conoce la nueva camara de 98 pixeles para sacar unas fotos de pelicula.
+          </p>
+          <p>
+          <button type="button" class="btn btn-default" title="Iphone 6 Plus" data-container="body" data-toggle="popover" data-placement="top" data-content=" El iPhone 6 Plus cuenta con una pantalla de 5.8 pulgadas que abarca todo el frente del teléfono, dejando un espacio arriba para acomodar todos los sensores que contribuyen a Face ID, el nuevo método de desbloqueo por rostro, ya que el botón Touch ID desaparece. Con una atípica resolución de 2436 x 1125 pixels, acomoda 458ppi. Por dentro, el iPhone 6 Plus tiene el nuevo procesador A11 Bionic. La cámara es dual de 98 MP similar a la del iPhone X, es resistente al agua y corre iOS 11. ">
+  Ver detalles <i class="fa fa-eye"></i>
+ </button>
+  <a href="validar.php"> <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Añadir este producto al carrito">Al carrito <i class="fa fa-shopping-cart"></i>
+</button></a>
+          </p>
         </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+        <?php
+        require_once('../Dao/DAOVenta.php');
+        $ventas = new DAOVenta();
+        $lista=$ventas->all();
+        foreach($lista as $fila){
+          //var_dump($fila);
+          echo '
+          <div class="col-lg-4">
+  
+              <a href=""><img src="../Imagenes/'.$fila["a_Imagen"].'" alt="Generic placeholder image" width="225" height="225"></a>
+  
+              <h2>'.$fila["aNombre"].'</h2>
+              <p><span class="badge">Precio $'.$fila["a_precio"].' MX</span></p>
+              <p>'.$fila["a_Desc"].'</p>
+              <p>
+                  <button type="button" class="btn btn-default" title="'.$fila["aNombre"].'" data-container="body" data-toggle="popover" 
+                  data-placement="top" data-content="'.$fila["a_Desc"].'">
+                      Ver detalles <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="validar.php"> <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Añadir este producto al carrito">Al carrito <i class="fa fa-shopping-cart"></i>
+                      </button></a>
+  
+              </p>
+          </div><!-- /.col-lg-4 -->';
+        }
+        ?>
 
-    <!--Pie de pagina footer-->
-    <?php include('footer.html'); ?>
-</div>
+
+      </div><!-- /.row -->
+
+      
+      <!--Pie de pagina footer-->
+      <?php include('footer.html'); ?>
+  </div>
+<!--Fin del contenedor-->
 
 
     <script src="../js/jquery-1.11.1.min.js"></script>

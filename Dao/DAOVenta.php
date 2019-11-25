@@ -67,4 +67,18 @@ class DAOVenta extends DAOGeneral{
        
        return $list;
     }
+
+    public function all(){
+        $sql = 'select v.Usuarios_u_Id,v.Articulos_a_Id, a.aNombre, a.a_precio, a.a_Desc,a.a_Imagen
+        from vende v
+        join articulos a on a.a_Id=v.Articulos_a_Id;';
+        $c = $this->getConexion();
+        $list = array();
+        $c = $this->getConexion();
+       foreach ($c->query($sql) as $fila){
+          array_push($list, $fila);
+        }
+       
+       return $list;
+    }
 }
