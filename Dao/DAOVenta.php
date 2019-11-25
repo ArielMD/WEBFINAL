@@ -1,16 +1,16 @@
 <?php
+include '../Dao/DAOGeneral.php';
 class DAOVenta extends DAOGeneral{
         public function insertar($entidad) {
         $c = $this->getConexion();
         
-        $id = $entidad->getId();
-        $nombres = $entidad->getNombre();
-        $precio = $entidad->getApellido();
-        $descripcion = $entidad->getEdad();
-        $cantidad = $entidad->getCorreo();
-       
-        $sql = 'insert into usuarios values ("'.$id.'","'.$nombres.'","'.$precio.'","'.$descripcion.'","'.$cantidad.')';
+        $user = $entidad->getUsuario();
+        $arti = $entidad->getArticulo();
+        $fecha = $entidad->getFechaVen();
 
+       
+        $sql = 'insert into vende values ("'.$user.'","'.$arti.'","'.$fecha.'")';
+        echo $sql;
         if (!$c->query($sql)) {
             return false;
         } else {
@@ -55,6 +55,16 @@ class DAOVenta extends DAOGeneral{
     }
     //falta terminar
     public function consultar($condicion) {
-        
+        $sql = 'select v.Usuarios_u_Id,v.Articulos_a_Id, a.aNombre, a.a_precio, a.a_Desc,a.a_Imagen
+        from vende v
+        join articulos a on a.a_Id=v.Articulos_a_Id where aNombre = "'.$condicion.'"';
+        $c = $this->getConexion();
+        $list = array();
+        $c = $this->getConexion();
+       foreach ($c->query($sql) as $fila){
+          array_push($list, $fila);
+       }
+       
+       return $list;
     }
 }

@@ -19,12 +19,12 @@ class DAOArticulo extends DAOGeneral{
         
         $id = $entidad->getId();
         $nombres = $entidad->getNombre();
-        $precio = $entidad->getApellido();
-        $descripcion = $entidad->getEdad();
-        $cantidad = $entidad->getCorreo();
-       
-        $sql = 'insert into usuarios values ("'.$id.'","'.$nombres.'","'.$precio.'","'.$descripcion.'","'.$cantidad.')';
-
+        $precio = $entidad->getPrecio();
+        $descripcion = $entidad->getDescripcion();
+        $cantidad = $entidad->getCantidad();
+        $imagen = $entidad->getImagen();
+        $sql = 'insert into articulos values ("'.$nombres.'",'.$precio.',"'.$descripcion.'",'.$cantidad.',"'.$id.'","'.$imagen.'")';
+        echo $sql;
         if (!$c->query($sql)) {
             return false;
         } else {

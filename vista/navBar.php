@@ -25,9 +25,9 @@
 
    
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-left" action="Articulos.php">
+      <form class="navbar-form navbar-left" action="Articulos.php" method="get">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Buscar articulo">
+          <input type="text" class="form-control" name="buscar" placeholder="Buscar articulo">
         </div>
         <button type="submit" class="btn btn-default">Buscar</button>
       </form>

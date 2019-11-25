@@ -111,33 +111,44 @@ El control por voz brinda más comodidad en la vida diaria, también es muy úti
       </a>
     </div><!-- /.carousel -->
       
-    <div class="container"> 
-       <div class="row">
-           <br><br>
-        <div class="col-lg-4">
-        
-          <a href=""><img src="../img/dell.jpg" alt="Generic placeholder image"></a>
-          
-          <h2>DELL XPS 6920</h2>
-          <p><span class="badge">Precio $42487 MX</span></p>
-          <p>La nueva pc de dell para los gamer que les gusta la
-          potencia al maximo, disfruta de esta nueva experiencia unica,
-          acompañada con un diseño elegante y poderoso</p>
-          <p>
-        <button type="button" class="btn btn-default" title="dellxps-6920" data-container="body" data-toggle="popover" data-placement="top" data-content="Pantalla de 15 pulgadas con resolución Full HD (1,920x1,080 pixeles) y con la opción de configurarla hasta con una resolución UHD 4K (3,840x2,160 pixeles)
-        Procesador Intel Core i7 o Intel Core i7 de séptima generación con una velocidad máxima de 3.8GHz.">
-        Ver detalles <i class="fa fa-eye"></i>
-        </button>
-        <a href="validar.php"> <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Añadir este producto al carrito">Al carrito <i class="fa fa-shopping-cart"></i>
-        </button></a>
-          
-        </p>
-        </div>
-        </div>
-        </div>
+<!--Inicio del contenedor-->
+<div class="container"> 
+    <div class="row">
+        <br><br>
+        <?php
+        require '../Dao/DAOVenta.php';
+        $ventas = new DAOVenta();
+        $busqueda = $_GET["buscar"];
+        $lista=$ventas->consultar($busqueda);
+        foreach($lista as $fila){
+          //var_dump($fila);
+          echo '
+          <div class="col-lg-4">
+  
+              <a href=""><img src="../Imagenes/'.$fila["a_Imagen"].'" alt="Generic placeholder image" width="225" height="225"></a>
+  
+              <h2>'.$fila["aNombre"].'</h2>
+              <p><span class="badge">Precio $'.$fila["a_precio"].' MX</span></p>
+              <p>'.$fila["a_Desc"].'</p>
+              <p>
+                  <button type="button" class="btn btn-default" title="'.$fila["aNombre"].'" data-container="body" data-toggle="popover" 
+                  data-placement="top" data-content="'.$fila["a_Desc"].'">
+                      Ver detalles <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="validar.php"> <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Añadir este producto al carrito">Al carrito <i class="fa fa-shopping-cart"></i>
+                      </button></a>
+  
+              </p>
+          </div><!-- /.col-lg-4 -->';
+        }
+        ?>
 
-      <!--Pie de pagina footer-->
-      <?php include('footer.html'); ?>
+
+    </div><!-- /.row -->
+
+    <!--Pie de pagina footer-->
+    <?php include('footer.html'); ?>
+</div>
 
     <script src="../js/jquery-1.11.1.min.js"></script>
 	<script src="../js/bootstrap.js"></script>

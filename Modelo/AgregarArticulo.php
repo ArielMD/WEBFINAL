@@ -5,7 +5,7 @@ session_start();
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-include '../Dao/DAOUsuario.php';
+include '../Dao/DAOArticulo.php';
 include '../Dao/DAOVenta.php';
 include '../Modelo/Articulo.php';
 include '../Modelo/Venta.php';
@@ -19,25 +19,27 @@ $cantidad = $_POST["cantidad"];
 //$imagen = $_POST["imagen"];
 
 $hoy = getdate();
-$venta = new venta($_SESSION["Usuario"],$id,$hoy["wday"]."-".$hoy["month"]."-".$hoy["year"]);
+$venta = new venta($_SESSION["Usuario"],$id,$hoy["mday"]."-".$hoy["month"]."-".$hoy["year"]);
 print_r($_FILES);
 $nomArchivo = $_FILES["imagen"]["name"];
 $guardado = $_FILES["imagen"]["tmp_name"];
-$Articulo = new Articulo($id, $nombre, $precio,  $descripcion, $cantidad,$nomArchivo);
+$Articulo = new Articulo($id, $nombre, $precio,  $descripcion, $cantidad,$nomArchivo,$nomArchivo);
 if(file_exists('../Imagenes')){
     if(move_uploaded_file($guardado,"../Imagenes/".$nomArchivo)){
 
     }
 }
-function nuevoArticulo($usuario){
-    $daoUser = new DAOArticulo();
+echo $Articulo->dato();
+echo $venta->dato(); 
+function nuevoArticulo($usuario,$venta){
+    $daoArticulo = new DAOArticulo();
     $daoVenta = new DAOVenta();
-    return $daoUser->insertar($usuario)&&$daoVenta->insertar($venta);
+    return $daoArticulo->insertar($usuario)&&$daoVenta->insertar($venta);
 }
 
-$nuevo = nuevoUsuario($Articulo);
+$nuevo = nuevoArticulo($Articulo,$venta);
 if($nuevo){
-    header('location:../vista/index.php');
+   header('location:../vista/index.php');
 }else{
     header('location:../vista/registroArticulos.php');
 }

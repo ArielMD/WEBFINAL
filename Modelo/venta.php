@@ -34,4 +34,8 @@ class venta {
     function setFechaVen($fechaVen) {
         $this->fechaVen = $fechaVen;
     }
+
+    function dato(){
+        return $this->getUsuario().$this->getArticulo().$this->getFechaVen();
+    }
 }

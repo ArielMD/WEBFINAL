@@ -39,7 +39,7 @@ class Articulo {
     }
 
     function getPrecio() {
-        return $this->precio;
+        return (float)$this->precio;
     }
 
     function getDescripcion() {
@@ -47,11 +47,11 @@ class Articulo {
     }
 
     function getCantidad() {
-        return $this->cantidad;
+        return (int)$this->cantidad;
     }
 
     function getImagen(){
-        return this->imagen;
+        return $this->imagen;
     }
 
     function setId($id) {
@@ -74,7 +74,7 @@ class Articulo {
         $this->cantidad = $cantidad;
     }
 
-    fucntion setImagen($imagen){
+    function setImagen($imagen){
         $this->imagen = $imagen;
     }
 
