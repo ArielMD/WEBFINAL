@@ -125,11 +125,11 @@ El control por voz brinda más comodidad en la vida diaria, también es muy úti
           acompañada con un diseño elegante y poderoso</p>
           <p>
         <button type="button" class="btn btn-default" title="dellxps-6920" data-container="body" data-toggle="popover" data-placement="top" data-content="Pantalla de 15 pulgadas con resolución Full HD (1,920x1,080 pixeles) y con la opción de configurarla hasta con una resolución UHD 4K (3,840x2,160 pixeles)
-Procesador Intel Core i7 o Intel Core i7 de séptima generación con una velocidad máxima de 3.8GHz.">
-  Ver detalles <i class="fa fa-eye"></i>
- </button>
-  <a href="validar.php"> <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Añadir este producto al carrito">Al carrito <i class="fa fa-shopping-cart"></i>
-</button></a>
+        Procesador Intel Core i7 o Intel Core i7 de séptima generación con una velocidad máxima de 3.8GHz.">
+        Ver detalles <i class="fa fa-eye"></i>
+        </button>
+        <a href="validar.php"> <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Añadir este producto al carrito">Al carrito <i class="fa fa-shopping-cart"></i>
+        </button></a>
           
         </p>
         </div>

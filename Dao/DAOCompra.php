@@ -1,20 +1,6 @@
 <?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of DAOArticulo
- *
- * @author Ariel May
- */
-include '../Dao/DAOGeneral.php';
-class DAOArticulo extends DAOGeneral{
-    
-    public function insertar($entidad) {
+class DAOCompra extends DAOGeneral{
+        public function insertar($entidad) {
         $c = $this->getConexion();
         
         $id = $entidad->getId();
@@ -71,5 +57,5 @@ class DAOArticulo extends DAOGeneral{
     public function consultar($condicion) {
         
     }
-
 }
+    

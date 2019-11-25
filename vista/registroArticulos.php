@@ -35,10 +35,10 @@
  
             <div class="col-12">
                 <center><h3>Registro de articulos</h3></center>
-                <form name="registroArticulos" method="post" action="AgregarArticulo.php" >
+                <form name="registroArticulos" method="post" action="../Modelo/AgregarArticulo.php" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="narticulo">Nombre de articulo</label>
-                        <input type="text" class="form-control" id="narticulo" aria-describedby="narticulo" placeholder="Introduce nombre articulo" name="narticulo" required>
+                        <input type="text" class="form-control" id="narticulo" aria-describedby="narticulo" placeholder="Introduce nombre articulo" name="articulo" required>
                     </div>
                     <div class="form-group">
                         <label for="precio">Precio</label>
@@ -57,17 +57,15 @@
                         <label for="correo">Cantidad</label>
                         <input type="text" class="form-control" id="cantidad" aria-describedby="cantidad" name="cantidad" placeholder="Introduce inventario" required>
                     </div>
-                   
-
-                    
-                    <div class="form-group">
-                        <label for="usuario">Usuario</label>
-                        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Introduce usuario"required>
-                    </div>
                     
                      <div class="form-group">
                         <label for="id">Id</label>
                         <input type="text" class="form-control" id="id" name="id" placeholder="Introduce id"required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="imagen">Cargar imagen</label>
+                        <input type="file"  name="imagen" >
                     </div>
                    
                     <div class="form-group">
