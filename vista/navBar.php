@@ -42,6 +42,8 @@
               if (isset($_SESSION['Usuario'])) {
                 echo '<li>--'.$_SESSION['Usuario'].'</li>';
                 echo '<li role="separator" class="divider"></li>';
+                echo '<li><a href="../vista/registoArticulos.php">Vender Articulo</a></li>';
+                echo '<li role="separator" class="divider"></li>';
               }
             ?>
             <?php

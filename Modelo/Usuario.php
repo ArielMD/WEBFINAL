@@ -68,7 +68,7 @@ class Usuario {
         $this->id = $id;
     }
 
-    function setContraseña($contrasena) {
+    function setContrasena($contrasena) {
         $this->contrasena = $contrasena;
     }
 

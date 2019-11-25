@@ -16,15 +16,15 @@ $edad = $_POST["edad"];
 $correo = $_POST["correo"];
 $telefono = $_POST["telefono"];
 $genero = $_POST["genero"];
-
-//$cast = settype($edad,"integer") && settype($telefono,"integer");
+$nuevoUsuario = new Usuario($id, $pass, $nombre, $apellido, $edad, $correo, $telefono, $genero);
+$nuevoUsuario->setContrasena($pass);
 
 function nuevoUsuario($usuario){
     $daoUser = new DAOUsuario();
     return $daoUser->insertar($usuario);
 }
-$nuevoUsuario = new Usuario($id, $pass, $nombre, $apellido, $edad, $correo, $telefono, $genero);
-echo $nuevoUsuario->Dato();
+
+echo $nuevoUsuario->dato();
 $nuevo = nuevoUsuario($nuevoUsuario);
 if($nuevo){
     if (isset($_POST['id'])) {
