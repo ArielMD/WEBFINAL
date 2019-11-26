@@ -68,17 +68,19 @@ and open the template in the editor.
                         $ventas = new DAOVenta();
                         $total =0;
                         $i=1;
-                        foreach($_SESSION['carrito'] as $arti){
-                            $a = $ventas->getArticulo($arti);
-                            echo '<tr>';
-                            echo'<th scope="row">' . $i . '</th>';
-                            echo'<td>' .$a["aNombre"]. '</td>';
-                            echo'<td>' ."1". '</td>';
-                            echo'<td>' .$a["Usuarios_u_Id"]. '</td>';
-                            echo'<td>$' .$a["a_precio"]. '</td>';
-                            echo '</tr>';
-                            $i++;
-                            $total += $a["a_precio"];
+                        if(isset($_SESSION['carrito'])){
+                            foreach($_SESSION['carrito'] as $arti){
+                                $a = $ventas->getArticulo($arti);
+                                echo '<tr>';
+                                echo'<th scope="row">' . $i . '</th>';
+                                echo'<td>' .$a["aNombre"]. '</td>';
+                                echo'<td>' ."1". '</td>';
+                                echo'<td>' .$a["Usuarios_u_Id"]. '</td>';
+                                echo'<td>$' .$a["a_precio"]. '</td>';
+                                echo '</tr>';
+                                $i++;
+                                $total += $a["a_precio"];
+                            }
                         }
                         echo '<tr>';
                         echo'<th scope="row"> TOTAL</th>';
@@ -103,16 +105,27 @@ and open the template in the editor.
 
                     <div class="col-4">
                     <?php
-                    if (isset($_GET['metodoPago'])){
+                    if (isset($_GET['metodoPago'])&&isset($_SESSION['Usuario']){
                     echo '<button type="submit" class="btn btn-primary btn-lg" name="accion">Comprar</button>';
                     }?>
                     </div>
                     
                     <div class="col-4">
                         <!--<button type="summit">Consultar</button>-->
-                        <form action="../vista/MetodosPago.php">
+                        <?php
+                        if(isset($_SESSION['Usuario']){
+                            echo '
+                            <form action="../vista/MetodosPago.php">
                             <button type="submit" class="btn btn-primary btn-lg" name="accion">Método de Pago</button>
-                        </form>
+                            </form>';
+                        }else{
+                            echo '
+                            <form action="../vista/login.php">
+                            <button type="submit" class="btn btn-primary btn-lg" name="accion">Método de Pago</button>
+                            </form>';
+                        }
+                        ?>
+
                     </div>
                 </div>
 
