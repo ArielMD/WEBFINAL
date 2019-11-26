@@ -135,7 +135,7 @@ El control por voz brinda más comodidad en la vida diaria, también es muy úti
                   data-placement="top" data-content="'.$fila["a_Desc"].'">
                       Ver detalles <i class="fa fa-eye"></i>
                   </button>
-                  <a href="validar.php"> <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Añadir este producto al carrito">Al carrito <i class="fa fa-shopping-cart"></i>
+                  <a href="?art='.$fila["Articulos_a_Id"].'"> <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Añadir este producto al carrito">Al carrito <i class="fa fa-shopping-cart"></i>
                       </button></a>
   
               </p>
