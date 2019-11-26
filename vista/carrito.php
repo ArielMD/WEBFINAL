@@ -105,15 +105,18 @@ and open the template in the editor.
 
                     <div class="col-4">
                     <?php
-                    if (isset($_GET['metodoPago'])&&isset($_SESSION['Usuario']){
-                    echo '<button type="submit" class="btn btn-primary btn-lg" name="accion">Comprar</button>';
+                    if (isset($_GET['metodoPago']) && isset($_SESSION['Usuario'])){
+                    echo ' <form action="../vista/Gracias.php">
+                    <button type="submit"  class="btn btn-primary btn-lg" name="accion">Comprar</button>
+                    </form>';
+                   
                     }?>
                     </div>
                     
                     <div class="col-4">
                         <!--<button type="summit">Consultar</button>-->
                         <?php
-                        if(isset($_SESSION['Usuario']){
+                        if(isset($_SESSION['Usuario'])){
                             echo '
                             <form action="../vista/MetodosPago.php">
                             <button type="submit" class="btn btn-primary btn-lg" name="accion">Método de Pago</button>
