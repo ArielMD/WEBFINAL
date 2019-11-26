@@ -33,7 +33,7 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
 
-      <li><a href="#">Ver carrito</a></li>
+      <li><a href="carrito.php">Ver carrito</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones<span class="caret"></span></a>
           <ul class="dropdown-menu">

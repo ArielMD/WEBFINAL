@@ -1,8 +1,16 @@
 <?php
+session_start();
+$articulo = $_GET["art"];
     if (!isset($_SESSION['carrito'])) {
-        $_SESSION['carrito'] = array();
-        $articulo = $_GET["art"];
-        array_push($_SESSION['carrito'], $articulo);
+        $lista = array();
+        array_push($lista, $articulo);
+        $_SESSION['carrito'] = $lista;
+        //var_dump($_SESSION['carrito']);
+        header('location:../vista/index.php');
     }else{
-        for
+            $lista = $_SESSION['carrito'];
+            array_push($lista, $articulo);
+            $_SESSION['carrito'] = $lista;
+            //var_dump($_SESSION['carrito']);
+            header('location:../vista/index.php');
     }
